@@ -9,6 +9,7 @@ function init() {
   const volumeIcon = document.querySelector('#volume-controls img');
   const playButton = document.querySelector('button');
   const audioElement = document.querySelector('audio');
+  const confetti = new JSConfetti();
 
   hornSelect.addEventListener('change', function() {
     const selectedHorn = hornSelect.value;
