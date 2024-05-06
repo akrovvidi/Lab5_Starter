@@ -1,7 +1,7 @@
 // expose.js
 
 window.addEventListener('DOMContentLoaded', init);
-
+const confetti = new JSConfetti();
 function init() {
   // TODO
   const hornSelect = document.getElementById('horn-select');
@@ -47,7 +47,6 @@ function init() {
   playButton.addEventListener('click', function() {
     audioElement.play();
     if(hornSelect.value == 'party-horn') {
-      const confetti = new JSConfetti();
       confetti.addConfetti();
     }
   });
