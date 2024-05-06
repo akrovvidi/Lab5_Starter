@@ -9,7 +9,7 @@ function init() {
   const volumeIcon = document.querySelector('#volume-controls img');
   const playButton = document.querySelector('button');
   const audioElement = document.querySelector('audio');
-  const confetti = new JSConfetti();
+
 
   hornSelect.addEventListener('change', function() {
     const selectedHorn = hornSelect.value;
@@ -25,7 +25,6 @@ function init() {
       case 'party-horn':
         document.querySelector('#expose img').src = 'assets/images/party-horn.svg';
         audioElement.src = 'assets/audio/party-horn.mp3';
-        confetti.addConfetti();
         break;
       default:
         break;
@@ -46,6 +45,7 @@ function init() {
     audioElement.volume = volumeValue / 100;
   });
   playButton.addEventListener('click', function() {
+    const confetti = new JSConfetti();
     audioElement.play();
     confetti.addConfetti();
   });
