@@ -25,6 +25,7 @@ function init() {
       case 'party-horn':
         document.querySelector('#expose img').src = 'assets/images/party-horn.svg';
         audioElement.src = 'assets/audio/party-horn.mp3';
+        confetti.addConfetti();
         break;
       default:
         break;
