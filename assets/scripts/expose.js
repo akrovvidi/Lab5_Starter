@@ -45,9 +45,9 @@ function init() {
     audioElement.volume = volumeValue / 100;
   });
   playButton.addEventListener('click', function() {
-    const confetti = new JSConfetti();
     audioElement.play();
     if(hornSelect.value === 'party-horn') {
+      const confetti = new JSConfetti();
       confetti.addConfetti();
     }
   });
