@@ -1,10 +1,7 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    // Populate voice list
     populateVoiceList();
-
-    // Add event listener to talk button
     const talkButton = document.querySelector('button');
     talkButton.addEventListener('click', speakText);
 }
